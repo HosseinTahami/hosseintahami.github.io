@@ -9,11 +9,26 @@
     /* Add this CSS to make the icons the same size */
     .icon {
       width: 40px;
-      /* Adjust the width as needed */
       height: 40px;
-      /* Adjust the height as needed */
       object-fit: contain;
-      /* Ensures images maintain aspect ratio */
+      transition: transform 0.3s ease;
+    }
+
+    /* Add these new styles for hover effects */
+    article {
+      transition: transform 0.3s ease;
+    }
+
+    article:hover {
+      transform: scale(1.1);
+    }
+
+    article:hover .icon {
+      transform: scale(1.2);
+    }
+
+    article:hover h3 {
+      color: #386363;
     }
   </style>
 </head>
